@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<layout>
+    <catalog_product_view>
+        <reference name="head">
+            <action method="additem">
+                <type>skin_js</type>
+                <file>iweb/simpleretriever/js/configurable.js</file>
+            </action>
+        </reference>
+    </catalog_product_view>
+</layout>

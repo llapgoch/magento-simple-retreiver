@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Iweb_SimpleRetriever>
+            <codePool>community</codePool>
+            <active>true</active>
+        </Iweb_SimpleRetriever>
+    </modules>
+</config>

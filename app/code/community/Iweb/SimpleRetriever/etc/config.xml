@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Iweb_SimpleRetriever>
+            <version>0.1.0</version>
+        </Iweb_SimpleRetriever>
+    </modules>
+
+    <global>
+        <helpers>
+            <iwebsimpleretriever>
+                <class>Iweb_SimpleRetriever_Helper</class>
+            </iwebsimpleretriever>
+        </helpers>
+
+        <blocks>
+            <iwebsimpleretriever>
+                <class>Iweb_SimpleRetriever_Block</class>
+            </iwebsimpleretriever>
+
+            <catalog>
+                <rewrite>
+                    <product_view_type_configurable>Iweb_SimpleRetriever_Block_Catalog_Product_View_Type_Configurable</product_view_type_configurable>
+                </rewrite>
+            </catalog>
+        </blocks>
+
+        <models>
+            <iwebsimpleretriever>
+                <class>Iweb_SimpleRetriever_Model</class>
+            </iwebsimpleretriever>
+        </models>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <iwebsimpleretriever>
+                    <file>iweb_simpleretriever.xml</file>
+                </iwebsimpleretriever>
+            </updates>
+        </layout>
+    </frontend>
+</config>
