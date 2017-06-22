@@ -25,8 +25,8 @@
 
             // We should have one simple to work with, which is our selected product
             if(products.length == 1){
-                if(this.config.urls[products[0]]){
-
+                if(this.config.simpleData[products[0]]){
+                    $(window.spConfig).trigger('simple_product_data', this.config.simpleData[products[0]]);
                 }
             }
 
