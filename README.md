@@ -10,14 +10,14 @@ iweb_simpleretriever_simple_data
 ### Javascript Events ###
 Events are fired on a jQuery instance of the window.spConfig object
 
-#### No simple selected ####
+**No simple selected**
 ```js
 $j(window.spConfig).on('simpleretriever_select_none', function(ev){
     // Function code
 });
 ```
 
-#### Simple product selected ####
+**Simple product selected**
 ```js
 $j(window.spConfig).on('simpleretriever_select_simple', function(ev, data){
     // Function code access the data required from the data parameter
