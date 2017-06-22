@@ -1,5 +1,5 @@
 ## Simple Retriever ##
-A simple module for retrieving data for simple propducts, when on a configurable's page
+A simple module for retrieving data for simple propducts when on a configurable's page
 
 ### Backend Events ###
 Use this event to add data to the JSON config array, which is passed to the Product.Config object
