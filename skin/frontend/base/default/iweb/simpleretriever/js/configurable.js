@@ -27,7 +27,10 @@
             // We should have one simple to work with, which is our selected product
             if(products.length == 1){
                 if(this.config.simpleData && this.config.simpleData[products[0]]){
-                    $(window.spConfig).trigger('simpleretriever_select_simple', this.config.simpleData[products[0]]);
+                    var data = this.config.simpleData[products[0]];
+                    data.productId = products[0];
+
+                    $(window.spConfig).trigger('simpleretriever_select_simple', data);
                 }
             }else{
                 $(window.spConfig).trigger('simpleretriever_select_none');
