@@ -1,6 +1,6 @@
 ;(function($){
     if(Product.Config){
-        Product.Config.prototype.configure = Product.Config.prototype.configure.wrap(function(parent, element){
+        Product.Config.prototype.configureElement = Product.Config.prototype.configureElement.wrap(function(parent, element){
             parent(element);
 
             var products = [];
@@ -22,7 +22,6 @@
                     }
                 }
             }
-
 
             // We should have one simple to work with, which is our selected product
             if(products.length == 1){
