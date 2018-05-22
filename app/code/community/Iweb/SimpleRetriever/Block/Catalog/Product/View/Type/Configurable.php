@@ -11,7 +11,8 @@ class Iweb_SimpleRetriever_Block_Catalog_Product_View_Type_Configurable extends 
         }
 
         $transport = new Varien_Object();
-        $transport->setSimpleData($products);
+        $transport->setSimpleData($products)
+            ->setConfigurableProduct($this->getProduct());
 
         // Use this to add data to the simple products
         Mage::dispatchEvent('iweb_simpleretriever_simple_data', ["transport" => $transport]);
