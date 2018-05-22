@@ -18,6 +18,12 @@ class Iweb_SimpleRetriever_Block_Catalog_Product_View_Type_Configurable extends 
         Mage::dispatchEvent('iweb_simpleretriever_simple_data', ["transport" => $transport]);
         $products = $transport->getSimpleData();
 
-       return ['simpleData' => $products];
+        $data = ['simpleData' => $products];
+
+        if($additional = $transport->getAdditionalData()){
+            $data['additionalData'] = $additional;
+        }
+
+       return $data;
     }
 }
